@@ -1,0 +1,278 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação Luau da Lisie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #06A6B8; /* Tom de azul turquesa do fundo */
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Elementos de folha no fundo simulados */
+            background-image: 
+                url('https://www.transparenttextures.com/patterns/leaf.png'), 
+                radial-gradient(circle at top left, rgba(0,0,0,0.1) 0%, transparent 40%),
+                radial-gradient(circle at bottom right, rgba(0,0,0,0.1) 0%, transparent 40%);
+        }
+
+        /* Card Principal */
+        .glass-card {
+            background-color: #00424db8; /* Azul escuro do card */
+            border: 1.5px solid #f3ce5e; /* Borda dourada */
+            border-radius: 20px;
+            width: 100%;
+            max-width: 380px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(243, 206, 94, 0.2);
+            margin-top: 20px;
+        }
+
+        .gold-text { color: #f3ce5e; }
+        
+        .info-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 2px;
+        }
+
+        .info-detail {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 4px;
+        }
+
+        .deadline {
+            font-size: 0.75rem;
+            color: #f3ce5e;
+            font-weight: 400;
+        }
+
+        /* Input Customizado */
+        .input-underline {
+            background: transparent;
+            border: none;
+            border-bottom: 1.5px solid white;
+            width: 100%;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .input-underline::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 300;
+        }
+
+        .input-underline:focus {
+            outline: none;
+            border-bottom-color: #f3ce5e;
+        }
+
+        /* Botão Dourado */
+        .btn-confirm {
+            background-color: #f3ce5e;
+            color: #242424;
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            transition: transform 0.2s, filter 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        .btn-confirm:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+        }
+
+        .btn-confirm:active {
+            transform: scale(0.98);
+        }
+
+        .subtitle {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 0.85rem;
+            font-weight: 400;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .logo-img {
+            width: 250px;
+            height: auto;
+        }
+
+        /* MAPA/THUMB */
+        .map-thumb {
+            width: 100%;
+            border-radius: 14px;
+            border: 1px solid rgba(243, 206, 94, 0.55);
+            overflow: hidden;
+            box-shadow: 0 12px 26px rgba(0,0,0,0.28);
+            transition: transform 0.18s ease, filter 0.18s ease;
+        }
+
+        .map-thumb:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+        }
+
+        .map-thumb:active {
+            transform: translateY(0px) scale(0.995);
+        }
+
+        .map-caption {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.9);
+            margin-top: 8px;
+        }
+
+        /* Instruções do formulário */
+        .form-instructions {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+
+        .form-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #f3ce5e;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="LuauDaLizie.png" alt="Luau da Lisie" class="logo-img">
+	
+    <img src="LeavesTexture.png" style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 120%;height: 100%;mix-blend-mode: multiply;z-index: -1;opacity: 50%;">
+    
+
+    <div class="subtitle">Aniversário • 15 Anos</div>
+
+    <div class="glass-card" style="z-index:2">
+        
+        <div class="info-title gold-text">Venha comemorar meus 15 anos em um Luau incrível!!!</div> <br>
+        <div class="info-detail">Chega mais cedo para aproveitar o sol, a piscina e esse clima gostoso de verão.  Às 14h é um horário legal.<br><br>
+				<div style="font-size:12px">
+          <b>Dica:</b>
+
+Traga roupa de banho.<br>
+
+Troca de roupa, talvez a noite fique friozinho.<br><br>
+          
+
+          <b>Às 22h os pais já podem vir buscar.</b><br>
+
+Teremos café da tarde e a noite será de pizza.
+      </div></div><br>
+<div class="info-title gold-text">Bora?!</div><br>
+        <div class="flex items-start gap-4 mb-6">
+            <i class="fa-regular fa-clock gold-text mt-1 text-xl"></i>
+            <div>
+                <div class="info-title gold-text">Quando</div>
+                <div class="info-detail"><b>21 de fev. de 2026</b></div>
+                <div class="info-detail">Das 14h00 às 22h00</div>
+                <div class="deadline italic">Confirmar até: 16/02/2026</div>
+            </div>
+        </div>
+
+        <div class="flex items-start gap-4 mb-4">
+            <i class="fa-solid fa-location-dot gold-text mt-1 text-xl"></i>
+            <div>
+                <div class="info-title gold-text">Onde</div>
+              <div class="info-detail"><b> Rencanto Beraldo</b></div>
+                <div class="info-detail">Rua 2, 153 - Estância Chaparral</div>
+                <div class="info-detail">Onda Verde - SP, 15450-000</div>
+                <a href="https://www.google.com/search?q=Rua+2%2C+153+-+Est%C3%A2ncia+Chaparral+Onda+Verde+-+SP%2C+15450-000&rlz=1C1FKPE_pt-PTBR1166BR1166&oq=Rua+2%2C+153+-+Est%C3%A2ncia+Chaparral+Onda+Verde+-+SP%2C+15450-000&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGEAyCggCEAAYgAQYogQyBwgDEAAY7wUyCggEEAAYgAQYogQyBwgFEAAY7wXSAQgxNzI2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&lqi=CjtSdWEgMiwgMTUzIC0gRXN0w6JuY2lhIENoYXBhcnJhbCBPbmRhIFZlcmRlIC0gU1AsIDE1NDUwLTAwMEjdybbwtLWAgAhaWRADEAQQBRAGEAcQCBAJGAAYARgCGAMYBBgFGAYYBxgIGAkiNXJ1YSAyIDE1MyBlc3TDom5jaWEgY2hhcGFycmFsIG9uZGEgdmVyZGUgc3AgMTU0NTAgMDAwkgEEZmFybQ#rlimm=16261992074094526635"
+                   class="gold-text underline text-sm font-semibold inline-block mt-2"
+                   target="_blank" rel="noopener noreferrer">
+                  Ver no mapa
+                </a>
+            </div>
+        </div>
+
+        <!-- ✅ IMAGEM DO MAPA (logo abaixo da sessão de endereço) -->
+        <a href="https://www.google.com/maps/dir/-20.8647499,-49.3057384/Ch%C3%A1cara+Recanto+Beraldo+-+Rua+2,+153+-+Est%C3%A2ncia+Chaparral,+Onda+Verde+-+SP,+15450-000/@-20.7602329,-49.4154424,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x94bcffd439c7bd69:0xe1ae33a1b49f40ab!2m2!1d-49.3427329!2d-20.6500072!3e0?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank" rel="noopener noreferrer"
+           class="block mb-8">
+
+            <img src="RecantoBeraldo.png"
+                 alt="Mapa - Recanto Beraldo"
+                 class="map-thumb" />
+
+            <div class="map-caption text-center">
+                Clique na imagem para abrir a localização 📍
+            </div>
+        </a>
+     
+        <div class="border-t border-white opacity-20 mb-8"></div>
+
+        <!-- ✅ SEÇÃO DE CONFIRMAÇÃO COM GOOGLE FORMS -->
+        <div class="text-center">
+            <div class="form-icon">
+                <i class="fas fa-clipboard-check"></i>
+            </div>
+            
+            <div class="info-title gold-text mb-2 text-lg">
+                Confirme sua presença!
+            </div>
+            
+            <div class="form-instructions mb-6">
+                Clique no botão abaixo para acessar o formulário de confirmação.<br>
+                É rápido, fácil e seguro!
+            </div>
+            
+            <button onclick="abrirFormularioConfirmacao()" class="btn-confirm map-thumb">
+                <i class="fas fa-edit"></i> Acessar Formulário de Confirmação
+            </button>
+            
+            <div class="form-instructions mt-4">
+                <i class="fas fa-lock gold-text" style="font-size: 0.8rem;"></i>
+                Formulário seguro do Google<br>
+                Você será redirecionado para uma nova página
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function abrirFormularioConfirmacao() {
+            // URL do seu Google Forms
+            const urlFormulario = "https://forms.gle/v6r2Qt6p1k6CLd7K7";
+            
+            // Abre em nova aba (melhor experiência)
+            window.open(urlFormulario, '_blank', 'noopener,noreferrer');
+            
+            // Feedback visual opcional (opcional)
+            setTimeout(() => {
+                alert("Formulário aberto! Por favor, preencha todos os campos para confirmar sua presença. Obrigada! 🌺");
+            }, 300);
+        }
+        
+        // Opcional: Adicionar efeito de confirmação quando voltar ao site
+        window.addEventListener('focus', function() {
+            // Esta função pode ser usada para dar feedback quando o usuário voltar do formulário
+            console.log("Usuário voltou ao site do Luau");
+        });
+    </script>
+
+    <script src="https://static.app/js/static.js" type="text/javascript"></script>
+</body>
+</html>
